@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: adocao
+  datasource:
+    url: jdbc:mysql://172.18.0.2:3306/adocao
+    username: usuario
+    password: root123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+      format_sql: true
+server:
+  port: 8080
